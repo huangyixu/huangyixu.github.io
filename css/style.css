@@ -250,6 +250,13 @@ td,
 th {
   padding: 0;
 }
+@font-face {
+  font-family: 'Monaco';
+  src: url("https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf");
+  font-weight: 'normal';
+  font-style: 'normal';
+  font-display: swap;
+}
 article#arc,
 article#cat,
 article#tag {
@@ -590,7 +597,7 @@ article#tag .all-tags ul li span:before {
   overflow: auto;
   background: var(--color-codeblock);
   font-size: 0.8125rem;
-  font-family: Menlo, UbuntuMono, Monaco, monospace, courier, sans-serif;
+  font-family: Menlo, Monaco, monospace, courier, sans-serif;
   border: 1px solid #ffebcb;
   padding: 16px;
   border-radius: 4px;
@@ -610,7 +617,7 @@ article#tag .all-tags ul li span:before {
   color: rgba(68,68,68,0.9);
 }
 .article code {
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: UbuntuMono, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
 }
 .article code:not([class]) {
   word-break: break-all;
@@ -5348,7 +5355,7 @@ p.p.logo {
 }
 span.p.code,
 p.p.code {
-  font-family: Menlo, UbuntuMono, Monaco, monospace, courier, sans-serif;
+  font-family: Menlo, Monaco, monospace, courier, sans-serif;
 }
 span.p.left,
 p.p.left {
@@ -5754,7 +5761,7 @@ div.timenode:hover .meta:after {
   -ms-transform: scale(1);
 }
 .article mjx-container {
-  font-family: Menlo, UbuntuMono, Monaco, monospace, courier, sans-serif;
+  font-family: Menlo, Monaco, monospace, courier, sans-serif;
   padding: 16px 8px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -6048,7 +6055,7 @@ div.timenode:hover .meta:after {
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-appearance: none;
-  font-family: Menlo, Menlo, UbuntuMono, Monaco, monospace, courier, sans-serif;
+  font-family: Menlo, Menlo, Monaco, monospace, courier, sans-serif;
   font-size: 11px;
   font-weight: bold;
   padding: 4px 8px;
@@ -6394,7 +6401,7 @@ pre {
   display: block;
   background: var(--color-block);
   font-size: 0.8125rem;
-  font-family: Menlo, UbuntuMono, Monaco, monospace, courier, sans-serif;
+  font-family: Menlo, Monaco, monospace, courier, sans-serif;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   line-height: 1.5;
@@ -6532,6 +6539,146 @@ pre {
 }
 .iziToast-message {
   word-break: break-all !important;
+}
+p,
+input,
+pre>span,
+textarea {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/text.png"), text;
+}
+.fancybox-container .fancybox-stage,
+.fancybox__carousel .is-draggable {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-out.png"), zoom-out;
+}
+.fancybox a,
+.fancybox-can-zoomIn .fancybox-content,
+.fancybox__carousel .fancybox__slide.can-zoom_in .fancybox__content {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-in.png"), zoom-in;
+}
+span.btn>a:not([href]):hover,
+.fancybox-button[disabled],
+.fancybox-button[disabled]:hover,
+.gt-container .gt-btn.is--disable,
+span.not-select {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/circle.png"), not-allowed;
+}
+html,
+a:not([href]),
+a:not([href]) p,
+button[disabled],
+html input[disabled],
+.article .widget,
+#l_body .post section.meta .new-meta-box .new-meta-item .notlink,
+ul.list-v.rightmenu a,
+span.btn a:not([href]),
+div.tabs ul.nav-tabs li.tab.active a,
+article#comments #valine_container .vcards .vhead span.vnick,
+kbd,
+.a > p,
+.not-select,
+.not-select p,
+.MiniValine *,
+.aplayer .aplayer-info .aplayer-music,
+.gt-container a.is--active,
+.iziToast,
+.iziToast p,
+.iframe,
+.embed-show,
+p > img,
+p > svg,
+.fix-cursor-default {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png"), default;
+}
+a,
+psw,
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit],
+table::-webkit-scrollbar-thumb,
+scrollbar::-webkit-scrollbar-thumb,
+#scroll-down,
+ul.list-v.rightmenu li.music a.nav.volume .aplayer-volume-bar,
+#u-search .modal .modal-header .btn-close,
+#u-search .modal .modal-footer .nav,
+article .checkbox input,
+details summary,
+.article a.link-card,
+div.tabs ul.nav-tabs li.tab a,
+.btn-copy,
+.fancybox-can-pan .fancybox-content,
+.fancybox-can-swipe .fancybox-content,
+.waves-effect,
+a.result.search-result-fix,
+.tag > p,
+.prev > p,
+.next > p,
+.author > p,
+.list-h > a > p,
+.category > a > p,
+.friend-right p,
+.v[data-class=v] a,
+.v[data-class=v] .vbtn,
+.v[data-class=v] .vicon,
+.v[data-class=v] .vcards .vcard .vhead .vnick,
+.v[data-class=v] .vcards .vcard .vh .vmeta .vat,
+.v[data-class=v] .vwrap .vemojis i,
+.v[data-class=v] .vcards .vcard .vcontent.expand,
+.aplayer .aplayer-pic,
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon,
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap,
+.aplayer .aplayer-list ol li,
+.aplayer .aplayer-list ol li .aplayer-list-author,
+.aplayer .aplayer-list ol li .aplayer-list-index,
+.waves-button,
+.waves-button-input,
+.waves-button:hover,
+.waves-button:visited,
+.fancybox-button,
+.MiniValine .vbtn,
+.MiniValine .vcancel-comment-reply,
+.MiniValine .vcancel-comment-reply svg,
+.MiniValine .vlist .vcard .vcomment-body .vat,
+.MiniValine .vlist .vcard .vcomment-body .vhead .vname,
+.MiniValine .vinputs-area .btn-wrap .vfunction-btn svg,
+.MiniValine .vinputs-area .vextra-area .vsmile-icons img,
+.MiniValine .vlist .vcard .vcomment-body .text-wrapper .vcomment a,
+.gt-container .gt-btn,
+.gt-container .gt-user-inner,
+.gt-container .gt-avatar-github,
+.gt-container .gt-popup .gt-action,
+.gt-container .gt-comment-like:hover,
+.gt-container .gt-comment-edit:hover,
+.gt-container .gt-comment-reply:hover,
+.tk-icon,
+.tk-avatar img,
+.tk-meta a,
+.tk-action-icon,
+.fancybox,
+.fix-cursor-pointer {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png"), pointer;
+}
+.cur-default {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png"), default !important;
+}
+.cur-pointer,
+.carousel__button,
+.fancybox__slide {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png"), pointer !important;
+}
+.cur-not-allowed {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/circle.png"), not-allowed !important;
+}
+.cur-zoom-in,
+.fancybox__carousel .fancybox__slide.can-zoom_in .fancybox__content {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-in.png"), zoom-in !important;
+}
+.cur-zoom-out,
+.fancybox__carousel .is-draggable {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-out.png"), zoom-out !important;
+}
+.cur-text {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/text.png"), text !important;
 }
 .common_read {
   z-index: auto !important;
